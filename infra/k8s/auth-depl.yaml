@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          image: oscarsial/auth:latest
+          # image: us.gcr.io/micro-ticketing-413821/auth
+          image: oscarsial/auth
 ---
 apiVersion: v1
 kind: Service

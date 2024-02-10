@@ -6,7 +6,11 @@ manifests:
 build:
   local:
     push: false
+  # googleCloudBuild:
+  #   projectId: micro-ticketing-413821
   artifacts:
+    # - image: us.gcr.io/micro-ticketing-413821/auth
+      # context: auth
     - image: oscarsial/auth
       context: auth
       docker:
@@ -14,4 +18,4 @@ build:
       sync:
         manual:
           - dest: .
-            src: 'src/**/*.ts'
+            src: 'src/**/*.js'
