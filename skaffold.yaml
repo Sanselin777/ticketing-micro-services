@@ -18,4 +18,12 @@ build:
       sync:
         manual:
           - dest: .
-            src: 'src/**/*.js'
+            src: 'src/**/*.ts'
+    - image: oscarsial/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - dest: .
+            src: '**/*.js'
