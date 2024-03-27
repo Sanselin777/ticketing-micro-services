@@ -9,7 +9,7 @@ const Header = ({ currentUser }) => {
     .map(({ label, href }) => {
       return (
         <li key={href} className="nav-item">
-          <Link className="navbar-brand" href={href}>
+          <Link className="navbar-brand text-primary" href={href}>
             {label}
           </Link>
         </li>
